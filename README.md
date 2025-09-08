@@ -12,5 +12,6 @@ FETCH --> |NO| FAIL
 
 SAVE --> PHONES
 SAVE --> PHONES_TS
+SAVE --> DISPLAY
 
 ```
