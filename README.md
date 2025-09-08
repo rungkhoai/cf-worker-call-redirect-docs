@@ -4,14 +4,14 @@
 flowchart TD
 USER --> PAGE --> KV --> PHONES --> |YES| PHONES_TS --> |"Còn hạn dưới 4h"| DISPLAY
 
-PHONES -->|NO| FETCH --> |OK| SAVE
+PHONES -->|NO| FETCH --> |OK| FETCH_OK
 
 PHONES_TS --> |"Hết hạn"| FETCH
 
 FETCH --> |NO| FAIL
 
-SAVE --> PHONES
-SAVE --> PHONES_TS
-SAVE --> DISPLAY
+FETCH_OK --> PHONES
+FETCH_OK --> PHONES_TS
+FETCH_OK --> DISPLAY
 
 ```
