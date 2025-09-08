@@ -6,7 +6,7 @@ USER --> PAGE --> KV --> PHONES --> |YES| PHONES_TS --> |"Còn hạn dưới 4h"
 
 PHONES -->|NO| FETCH --> |OK| SAVE
 
-PHONES_TS --> |"Hết hạn"| FETCH --> SAVE
+PHONES_TS --> |"Hết hạn"| FETCH
 
 FETCH --> |NO| FAIL
 
