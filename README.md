@@ -10,4 +10,7 @@ PHONE_TS --> |"Hết hạn"| FETCH --> SAVE
 
 FETCH --> |NO| FAIL
 
+SAVE --> PHONES
+SAVE --> PHONES_TS
+
 ```
