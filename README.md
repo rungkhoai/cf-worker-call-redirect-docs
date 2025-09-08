@@ -2,7 +2,10 @@
 
 ```mermaid
 flowchart TD
-USER --> PAGE --> PHONES --> PHONE_TS --> DISPLAY
+USER --> PAGE --> KV --> PHONES --> |YES| PHONE_TS --> |"Còn hạn dưới 4h"| DISPLAY
 
+PHONES --|NO| FETCH --> |OK| SAVE --> DISPLAY
+
+FETCH --> |NO| FAIL
 
 ```
